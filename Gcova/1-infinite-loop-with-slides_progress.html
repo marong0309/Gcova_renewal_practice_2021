@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo - progress </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            /*text-align: center;
+            font-size: 18px;*/
+            /* Center slide text vertically */
+            /*display: flex;
+            justify-content: center;
+            align-items: center;*/
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+        }
+/*
+        .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+            opacity: 1;
+            color: #fff;
+            background: #777;
+            border-radius: 0;
+        }*/
+        
+        .swiper-button-next, .swiper-button-prev {
+          background-size: auto;
+          
+      }
+
+        .swiper-button-prev {
+            background-image: url(img/main/pre_button.png);
+            margin-left: 5%;
+        }
+        
+        .swiper-button-next {
+            background-image: url(img/main/next_button.png);
+            margin-right: 5%;
+        }
+        
+        .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+            background-color: #fa6868;
+        }
+        
+        
+        
+        .swiper-container-horizontal>.swiper-pagination-progressbar, .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+            height: 8px;
+            top: auto;
+            /* 0값 해제는 auto */
+            bottom: 0;                
+        }
+        
+        .swiper-container-horizontal>.swiper-pagination-progressbar {
+            background-color: #e5e5e5;
+        }
+        
+        .swiper-container-vertical>.swiper-pagination-progressbar{
+            background: #fa6868;
+        }
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <!--클래스명 순서가 중요하다-->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/main/eventpage.jpg" alt="지코바스틱이벤트"></div>
+            <div class="swiper-slide"><img src="img/main/eventpage02.jpg" alt="언제나바른선택"></div>
+            <div class="swiper-slide"><img src="img/main/eventpage03.jpg" alt="지코바 치킨"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-pause"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1, //보여지는 슬라이드 개수
+            spaceBetween: 20, //슬라이드 사이 공간
+            loop: true, // 반복 슬라이드
+            keyboard: {
+                enabled: true, //키보드 제어
+            },
+            autoplay: {
+              delay: 4000, // 4초마다 슬라이드
+              disableOnInteraction: true, //버튼 제어시 멈춤
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar',
+
+                renderBullet: function(index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + '</span>'
+                }
+            },
+            navigation: { //이전다음버튼 제어
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+</body>
+
+</html>

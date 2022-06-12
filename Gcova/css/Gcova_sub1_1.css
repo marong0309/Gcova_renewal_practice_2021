@@ -1,0 +1,241 @@
+@charset "utf-8";
+
+
+/* sub_title_bg 시작 */
+
+
+#subtext_tas {          
+    position: relative;
+}
+
+#sub_ex_wrap {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;    
+}
+
+#sub_fig_wrap {
+    width: 100%;
+    position: relative;
+    transform: translateY(-200px);
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    overflow: hidden;
+}
+
+#sub_fig_wrap > figure {
+    width: 100%;
+    text-align: center;
+    
+}
+#sub_fig_wrap > figure{
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.5s ease-in;
+}
+
+#sub_fig_wrap.efc_h > figure{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+#sub_fig_wrap > figure > img {
+    width: 100%;
+    text-align: center;
+    vertical-align: top;
+}
+
+#sub_fig_wrap.efc_h {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+#sub_fig_wrap > h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 0 15%;
+}
+
+
+
+/* subtxt_allwrap 시작 */
+
+
+#subtxt_allwrap {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 7%;
+}
+
+#subtxt_ex_wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#subtxt_wrap {
+    width: 100%;
+    background: #fff4ba;
+    padding: 5% 5% 8%;
+    box-sizing: border-box;
+    position: relative;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 0.7s ease-in;
+    margin: 0 auto;
+    border-radius: 0 0 40px 0;
+}
+
+#subtxt_wrap.efc_txt {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+#subtxt_wrap > p {
+    margin-bottom: 2%;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    color: #030303;
+}
+
+#subtxt_wrap > p:last-child {
+    float: right;
+    font-size: 0.97em;
+    margin-top: 1.8%;
+}
+
+
+#sub_bar_wrap > ul li:first-child {
+    background: #fa6868;
+}
+
+#sub_bar_wrap > ul li:first-child a {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* 반응형 웹 시작 */
+
+@media screen and (max-width:1000px) {
+
+    #sub_bar_wrap > ul li a {
+        font-size: 1.13em;
+    }
+
+    #subtxt_wrap > p {
+        font-size: 1.15em;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    
+    #sub_bar_wrap > ul li a {
+        font-size: 1.2em;
+    }
+
+    #sub_fig_wrap > h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+    #sub_bar_wrap > ul li {
+        width: 33.1%;
+        border-left: 1px solid #fff;
+    }
+
+    #sub_bar_wrap > ul li:nth-child(4),
+    #sub_bar_wrap > ul li:last-child {
+        border-top: 1px solid #fff;
+    }
+
+
+    #sub_bar_wrap > ul li:first-child,
+    #sub_bar_wrap > ul li:nth-child(4) {
+        border-left: 0;
+    }
+
+    #sub_bar_wrap > ul li a {
+        padding: 8% 0;
+    }
+
+    #sub_bar_wrap > ul li:nth-child(4) a,
+    #sub_bar_wrap > ul li:last-child a {
+        padding: 5.2% 0;
+    }
+
+    #subtxt_allwrap {
+        margin-bottom: 18%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 560px) {
+    #sub_fig_wrap > h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+
+    #sub_bar_wrap > ul li a {
+        font-size: 1.15em;
+    }
+
+
+
+}
+
+@media screen and (max-width: 460px) {
+
+
+    #subtxt_wrap > p:last-child {
+        font-size: 0.9em;
+    }
+
+    #subtxt_wrap {
+        padding: 5% 5% 13%;
+    }
+    
+     #sub_fig_wrap > h3 {
+        font-size: 13.5px;
+        line-height: 18px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 425px) {
+    
+   
+
+
+    #subtxt_wrap {
+        padding: 5% 5% 13%;
+    }
+    
+    #subtxt_wrap > p{
+        font-size: 1em;
+    }
+    
+     
+     #sub_fig_wrap > h3 {
+        font-size: 12.5px;
+        line-height: 16px;
+    }
+
+}

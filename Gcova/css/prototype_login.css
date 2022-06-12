@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+legend {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+.row_f {
+    max-width: 465px;
+    margin: 10px auto;
+}
+
+/*
+
+a, h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+*/
+
+
+/* header ===== */
+
+#loginallwrap {
+    max-width: 465px;
+    margin: 7% auto 10%;
+    padding: 0 5%;
+}
+
+#login_wrap {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+#top {
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+    padding: 6% 0;
+    margin-top: 5%;
+}
+
+#top > h1 {
+    padding-top: 7%;
+    float: left;
+    width: 40%;
+    margin-top: 3%;
+}
+
+span.title {
+    border-left: 10px solid #fa6868;
+    padding-left: 20%;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+/* logo 이미지 ====== */
+
+#logo {
+    float: right;
+    width: 55%;
+}
+
+#logo > a > img {
+    width: 50%;
+    float: right;
+}
+
+/* form =========== */
+
+form {
+    margin-top: 5%;
+    max-width: 465px;
+}
+
+fieldset {
+    border: none;
+    width: 100%;
+}
+
+.box1 {
+    width: 100%;
+    border: none;
+    display: block;
+    background: #f0f0f0;
+    padding: 4% 5%;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+#id {
+    margin-top: 3%;
+}
+
+#pw {
+    margin-top: 3%;
+}
+
+#three {
+    margin-top: 2%;
+}
+
+#idtext {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 13px;
+
+}
+
+input#idsave {
+    margin-right: 1%;
+    vertical-align: middle;
+}
+
+#four {
+    margin-top: 3%;
+    text-align: right;
+}
+
+
+#logins {
+    width: 23%;
+    padding: 2% 0;
+    border: 0;
+    background: #fa6868;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#btnlgin {
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#btnlgin > a {
+    width: 32.3%;
+}
+
+#btnlgin > a > img {
+    width: 100%;
+}
+
+
+#border > img {
+    border: 1px solid #ccc;
+}
+
+/* 회원가입 ============ */
+#five {
+    margin-top: 10%;
+    max-width: 465px;
+}
+
+.member {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.mbs_wrap_1{
+    width: 63%;
+    border-bottom: 1px solid #d3d3d3;
+    padding-top: 3%;
+    padding-left: 2%;
+}
+
+.mbs_wrap_2{
+    width: 30%;    
+}
+
+.lgnfont {
+    width: 100%;    
+    color: #6c6c6c;
+    font-size: 13px;
+}
+
+.lgncommon {
+    width: 100%;    
+    border: none;
+    padding: 9% 4%;
+    color: #505050;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#buttona {
+    font-size: 14px;
+    margin-top: -3%;
+}
+
+#buttonb {
+    font-size: 13px;
+}
+
+
+@media screen and (max-width:435px) {
+     .lgnfont {
+        font-size: 0.9em;
+    }
+
+}
+
+@media screen and (max-width:370px) {
+    .lgnfont {
+        font-size: 0.8em;
+    }
+    #buttona,
+    #buttonb {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width:345px) {
+    .lgnfont {
+        font-size: 0.7em;
+    }
+    #buttona,
+    #buttonb {
+        font-size: 0.75em;
+    }
+}
+

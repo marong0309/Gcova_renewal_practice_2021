@@ -1,0 +1,304 @@
+<!Doctype html>
+<html>
+
+<head lang="ko">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>&#58;&#58;신규개설점&#58;&#58;</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Gcova_common.css">
+    <link rel="stylesheet" href="css/Gcova_sub_common.css">
+    <link rel="stylesheet" href="css/Gcova_sub5_1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="img/main/Gcova_favicon.png" rel="shortcut icon">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/Gcova_mb_common.js"></script>
+
+    <script>
+        $(function() { // jQuery 시작
+            var chT1=["주안 1호점","부개 1호점","둔전점 1호점","독립문 1호점","성주 1호점","양재 1호점"];
+            var chT2=["032-868-8301 / 8302","032-505-0502","031-323-0906","02-739-6997","055-274-7877","02-574-1174"];
+            var chT3=["인천광역시 미추홀구 미추홀대로 719번길 4","인천광역시 부평구 부개동 충선로 171","경기 용인시 처인구 포곡읍 포곡로117번길 6 103호","서울시 종로구 송월길 155 4107호","경남 창원시 성산구 삼정자로51번길 7","서울 서초구 마방로 44-1"];
+            
+            $('#glayLayer').hide();
+            
+            $('#new_mrk_wrap > ul li').click(function() {
+                var k = $(this).index();
+                $('.change_txt').text(chT1[k]);
+                $('.change_txt2').text(chT2[k]);
+                $('.change_txt3').text(chT3[k]);
+                
+                $('#glayLayer').fadeIn(300).css({
+                    display: 'flex'
+                });
+
+                $('#overLayer figure .big').attr({
+                    src: $(this).find('a').attr('href'),
+                    alt: $(this).find('a img').attr('alt')
+                });
+
+                return false;
+            });
+
+            $('.md_btn_close').click(function() {
+                $('#glayLayer').fadeOut(300);
+            });
+            
+            
+        }); // jQuery 종료    
+
+    </script>
+
+</head>
+
+
+<body>
+
+    <!-- header ============= -->
+    <? include "header.html" ?>
+    <!-- header 끝 ============= -->
+
+    <section id="top_ads_bg">
+        <div id="topads_wrap" class="row_c">
+            <a href="Gcova_sub4_1.html">
+                <div id="ads_img_wrap">
+                    <figure>
+                        <img src="img/sub01/sub01_05/ads_bar.jpg" alt="지코바광고">
+                    </figure>
+                    <figure>
+                        <img src="img/sub01/sub01_01/ads_Gcova2.jpg" alt="지코바광고">
+                    </figure>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="gcova_sub_bar_bg">
+        <div id="subbar_allwrap">
+            <div id="sub_bar_wrap" class="row">
+                <h2 id="subbar_title">신규개설점</h2>
+                <ul>
+                    <li>
+                        <a href="Gcova_sub5_1.html#subbar_title">
+                            신규개설점
+                        </a>
+                    </li>
+                </ul>
+
+                <section class="row">
+                    <div id="new_mrk_allwrap">
+                        <div id="new_mrk_exwrap">
+                            <div id="new_mrk_wrap">
+                                <ul>
+                                    <li>
+                                        <a href="img/sub05/sub05_1/New_01.jpg">
+                                            <div class="w_box_wrap">
+                                                <img src="img/sub05/sub05_1/New_01.jpg" alt="주안 1호점">
+                                                <span class="w_box"></span>
+                                            </div>
+                                            <!--w_box_wrap-->
+                                            <div class="bt_txt_wrap">
+                                                <p>&#91; 2021년 1/4분기 &#93;</p>
+                                                <p>주안 1호점</p>
+                                            </div>
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="img/sub05/sub05_1/New_02.jpg">
+                                            <div class="w_box_wrap">
+                                                <img src="img/sub05/sub05_1/New_02.jpg" alt="부개 1호점">
+                                                <span class="w_box"></span>
+                                            </div>
+                                            <!--w_box_wrap-->
+                                            <div class="bt_txt_wrap">
+                                                <p>&#91; 2021년 1/4분기 &#93;</p>
+                                                <p>부개 1호점</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="img/sub05/sub05_1/New_03.jpg">
+                                            <div class="w_box_wrap">
+                                                <img src="img/sub05/sub05_1/New_03.jpg" alt="둔전점 1호점">
+                                                <span class="w_box"></span>
+                                            </div>
+                                            <!--w_box_wrap-->
+                                            <div class="bt_txt_wrap">
+                                                <p>&#91; 2021년 1/4분기 &#93;</p>
+                                                <p>둔전점 1호점</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="img/sub05/sub05_1/New_04.jpg">
+                                            <div class="w_box_wrap">
+                                                <img src="img/sub05/sub05_1/New_04.jpg" alt="독립문 1호점">
+                                                <span class="w_box"></span>
+                                            </div>
+                                            <!--w_box_wrap-->
+                                            <div class="bt_txt_wrap">
+
+                                                <p>&#91; 2021년 1/4분기 &#93;</p>
+                                                <p>독립문 1호점</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="img/sub05/sub05_1/New_05.jpg">
+                                            <div class="w_box_wrap">
+                                                <img src="img/sub05/sub05_1/New_05.jpg" alt="성주 1호점">
+                                                <span class="w_box"></span>
+                                            </div>
+                                            <!--w_box_wrap-->
+                                            <div class="bt_txt_wrap">
+                                                <p>&#91; 2021년 1/4분기 &#93;</p>
+                                                <p>성주 1호점</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="img/sub05/sub05_1/New_06.jpg">
+                                            <div class="w_box_wrap">
+                                                <img src="img/sub05/sub05_1/New_06.jpg" alt="양재 1호점">
+                                                <span class="w_box"></span>
+                                            </div>
+                                            <!--w_box_wrap-->
+                                            <div class="bt_txt_wrap">
+                                                <p>&#91; 2021년 1/4분기 &#93;</p>
+                                                <p>양재 1호점</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--new_mrk_wrap-->
+                        </div>
+                        <!--new_mrk_exwrap-->
+                    </div>
+                    <!--new_mrk_allwrap-->
+
+                    <div id="num_list_wrap">
+                        <div id="num_list">
+                            <ul>
+                                <li>
+                                    <a href="Gcova_sub5_1.html">
+                                        <figure>
+                                            <img src="img/sub05/sub05_1/prev.png" alt="이전">
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Gcova_sub5_1.html">
+                                        <span>1</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Gcova_sub5_1.html">
+                                        <span>2</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Gcova_sub5_1.html">
+                                        <span>3</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Gcova_sub5_1.html">
+                                        <span>4</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Gcova_sub5_1.html">
+                                        <span>5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Gcova_sub5_1.html">
+                                        <figure>
+                                            <img src="img/sub05/sub05_1/next.png" alt="다음">
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!--num_list_wrap-->
+                </section>
+
+            </div>
+            <!--sub_bar_wrap-->
+
+        </div>
+        <!--subbar_allwrap-->
+    </section>
+    <!--gcova_sub_bar_bg-->
+
+    <div id="glayLayer">
+        <div id="overLayer">
+            <figure>
+                <img src="img/sub05/sub05_1/New_01.jpg" alt="주안1호점" class="big">
+            </figure>
+            <span class="md_btn_close">
+                <img src="img/sub05/sub05_1/x_mrk.png" alt="닫기">
+            </span>
+            <div id="new_sm_extitle_wrap">
+                <div id="sm_title_wrap">
+                    <div class="new_sm_title">
+                        <h6>
+                            &#91; 2021년 1/4분기 &#93;
+                        </h6>
+                    </div>
+                    <!--new_sm_title-->
+
+                    <div class="new_sm_extitle">
+                        <ul>
+                            <li>
+                                <strong>
+                                    업체명
+                                </strong>
+                                <span class="change_txt">
+                                    주안 1호점
+                                </span>                               
+                            </li>
+                            <li>
+                                <strong>
+                                    전화번호
+                                </strong>
+                                <span class="change_txt2">
+                                    032&#45;868&#45;8301 / 8302
+                                </span>                               
+                            </li>
+                            <li>
+                                <strong>
+                                    주소
+                                </strong>
+                                <span class="change_txt3">
+                                    인천광역시 미추홀구 미추홀대로 719번길 4
+                                </span>                              
+                            </li>
+                        </ul>
+                    </div>
+                    <!--new_sm_extitle-->
+                </div>
+                <!--sm_title_wrap-->
+
+            </div>
+            <!--new_sm_extitle_wrap-->
+
+        </div>
+        <!--overLayer-->
+    </div>
+    <!--glayLayer-->
+
+
+
+
+    <? include "footer.html" ?>
+
+
+</body>
+
+</html>

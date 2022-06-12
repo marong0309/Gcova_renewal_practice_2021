@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>지코바로그인</title>
+    <link rel="stylesheet" href="css/prototype_login.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Gcova_common.css">
+    <link rel="stylesheet" href="css/Gcova_sub_common.css">
+    <link rel="stylesheet" href="css/prototype_login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="img/main/Gcova_favicon.png" rel="shortcut icon">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/Gcova_mb_common.js"></script>
+
+
+</head>
+
+<body>
+
+ <? include "header.html" ?>
+
+<div id="loginallwrap">
+        <div id="login_wrap" class="row_f">
+            <div id="top">
+                <h1><span class="title">로그인</span></h1>
+                <figure id="logo">
+                    <a href="Gcova_main.html">
+                        <img src="img/login/%EC%A7%80%EC%BD%94%EB%B0%94%EB%A1%9C%EA%B3%A0.png" alt="로고">
+                    </a>
+                </figure>
+            </div>
+            <!--top-->
+
+            <form action="http://www.naver.com" name="prototype_login" id="prototype_login" method="post">
+                <fieldset>
+                    <!--legend가 항상 따라다님-->
+                    <legend>로그인</legend>
+
+                    <div id="one">
+                        <label for="id">id</label>
+                        <input class="box1" type="text" name="id" id="id" placeholder="아이디" maxlength="13" pattern="[a-z^0-9]{4,13}" title="영문 소문자,숫자만 사용하여, 4자리 이상 13자리 미만으로 설정하세요" required>
+                    </div>
+
+                    <div id="two">
+                        <label for="pw">PW</label>
+                        <input class="box1" type="password" name="pw" id="pw" placeholder="비밀번호" maxlength="13" pattern="[a-z^0-9]{6,13}" title="영문 소문자,숫자만 사용하여, 6자리 이상 13자리 미만으로 설정하세요" required>
+                    </div>
+
+                    <div id="three">
+                        <input type="checkbox" name="idsave" id="idsave">
+                        <label for="idsave" id="idtext">아이디저장</label>
+                    </div>
+
+                    <div id="four">
+                        <input type="submit" id="logins" value="로그인">
+                    </div>
+
+                    <div id="btn_lg_wrap">
+                        <div id="btnlgin">
+                            <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com"><img src="img/login/loginbutton_03.png" alt="네이버로그인"></a>
+                            <a href="https://accounts.kakao.com/login?continue=https%3A%2F%2Faccounts.kakao.com%2Fweblogin%2Faccount%2Finfo"><img src="img/login/loginbutton_05.png" alt="카카오로그인"></a>
+                            <a id="border" href="https://accounts.google.com/signin/v2/identifier?hl=ko&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="img/login/loginbutton_07.png" alt="구글로그인"></a>
+                        </div>
+                    </div>
+                    <!--btn_lg_wrap-->
+
+                    <!--four-->
+
+                    <div id="five">
+                        <div class="member">
+                           <div class="mbs_wrap_1">
+                            <span class="lgnfont">아직 지코바치킨 회원이 아니신가요?</span>
+                            </div>
+                            <div class="mbs_wrap_2">
+                            <input id="buttona" class="lgncommon" type="button" value="회원가입" onclick="window.open('http://www.naver.com')">
+                            </div>
+                        </div>
+                        <div class="member">
+                           <div class="mbs_wrap_1">
+                            <span class="lgnfont">아이디나 비밀번호가 기억나지 않으세요?</span>
+                            </div>
+                            <div class="mbs_wrap_2">
+                            <input id="buttonb" class="lgncommon" type="button" value="ID/비말번호 찾기" onclick="window.open('http://www.google.com')">
+                            </div>
+                        </div>
+                    </div>
+                    <!--five-->
+
+                </fieldset>
+            </form>
+        </div>
+        <!--login_wrap-->
+    </div>
+    <!--loginallwrap-->
+
+
+ <? include "footer.html" ?>
+
+
+
+</body>
+
+</html>

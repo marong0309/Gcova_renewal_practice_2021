@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+/* 서브메뉴 기본설정 */
+
+#sub_bar_wrap > ul li:nth-child(3) {
+    background: #fa6868;
+}
+
+#sub_bar_wrap > ul li:nth-child(3) a {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* 주요시설 이미지 */
+
+#main_plc_wrap {   
+    margin: 2% auto 6%;
+}
+
+#main_plc_mainimg {
+    margin: 8% 6%;
+}
+
+#main_plc_wrap > h4 {
+    text-align: left;
+    font-size: 17px;
+    border-left: 7px solid #ff6f6f;
+    padding-left: 3%;
+    color: #3e3e3e;
+    margin-top: 7%;
+    margin-left: 7%;
+
+}
+
+#main_plc_mainimg > figure {
+    text-align: center;
+    margin-top: 4%;
+    width: 100%;
+}
+
+#main_plc_mainimg > figure img {
+    vertical-align: top;
+    width: 100%;
+}
+
+
+#slide {
+    max-width: 100%;
+    margin: 10px auto 30px;
+    padding: 0 0;
+    position: relative;
+    text-align: center;
+}
+
+#slide .swiper-container {
+    padding: 45px 0 70px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#slide .swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    background-image: url(../img/main/pre_button.png);
+}
+
+#slide .swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    background-image: url(../img/main/next_button.png);
+}
+
+#slide .swiper-container .swiper-slide {
+    width: 45%;
+    transform: scale(0.6);
+}
+
+#slide .swiper-container .swiper-slide img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+#slide .swiper-container .swiper-slide p {
+    margin: 5%;
+    font-size: 16px;
+}
+
+#slide .swiper-container .swiper-slide.swiper-slide-active {
+    transform: scale(1.3);
+    z-index: 5;
+}
+
+#slide .swiper-pagination-bullet-active {
+    background: #fa6868;
+}
+
+
+
+/* 반응형 웹 시작 */
+
+@media screen and (max-width: 768px) {
+
+
+    #sub_bar_wrap > ul li a {
+        font-size: 1.2em;
+    }
+
+
+    #sub_bar_wrap > ul li {
+        width: 33.1%;
+        border-left: 1px solid #fff;
+    }
+
+    #sub_bar_wrap > ul li:nth-child(4),
+    #sub_bar_wrap > ul li:last-child {
+        border-top: 1px solid #fff;
+    }
+
+
+    #sub_bar_wrap > ul li:first-child,
+    #sub_bar_wrap > ul li:nth-child(4) {
+        border-left: 0;
+    }
+
+    #sub_bar_wrap > ul li a {
+        padding: 8% 0;
+    }
+
+    #sub_bar_wrap > ul li:nth-child(4) a,
+    #sub_bar_wrap > ul li:last-child a {
+        padding: 5.2% 0;
+    }
+
+
+    #main_plc_wrap {       
+        margin: 3% auto 10%;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    #slide .swiper-container .swiper-slide {
+        width: 100%;
+        transform: scale(1);
+        margin: -5% auto;
+    }
+
+    #slide .swiper-container .swiper-slide.swiper-slide-active {
+        transform: scale(1.3);
+    }
+
+    #main_plc_wrap > h4 {
+        font-size: 16px;
+    }
+
+    #slide .swiper-container .swiper-slide p {
+        margin: 10% 0 -3%;
+        font-size: 14px;
+    }
+    
+    #slide .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+        transform: scale(0.6);
+    }
+    
+    #slide .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+        transform: scale(0.6);
+    }
+    
+    #slide .swiper-container{
+        padding-bottom: 20%;
+    }
+    
+}
+
+@media screen and (min-width: 601px) {
+
+    #slide .swiper-container .swiper-slide.swiper-slide-active {
+        transform: scale(1.3);
+    }
+
+    #slide .swiper-container .swiper-slide.swiper-slide-prev,
+    #slide .swiper-container .swiper-slide.swiper-slide-next {
+        transform: scale(0.6);
+    }
+    
+
+    #slide .swiper-container .swiper-slide {
+        width: 45%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 560px) {
+    #sub_bar_wrap > ul li a {
+        font-size: 1.15em;
+    }
+     #slide .swiper-container .swiper-slide.swiper-slide-prev,
+    #slide .swiper-container .swiper-slide.swiper-slide-next {
+        transform: scale(0.6);
+    }
+
+    
+}
+
+
+@media screen and (max-width: 425px) {
+    #main_plc_wrap > h4 {
+        margin-bottom: -2%;
+    }
+}
+
+@media screen and (max-width: 385px){
+     #main_plc_wrap > h4 {
+        margin-bottom: -4%;
+    }
+    
+    
+    #slide .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+        transform: scale(0.4);
+        
+    }
+    
+    #slide .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+        transform: scale(0.4);
+    }
+} 

@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/* 서브메뉴바 기본 */
+
+#sub_bar_wrap > ul li:nth-child(2) {
+    background: #fa6868;
+}
+
+#sub_bar_wrap > ul li:nth-child(2) a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* comyear 스타일 시작 */
+
+#comyear_wrap {
+    margin: 10% auto;        
+    width: 100%;
+    text-align: center;
+}
+
+#comyear_wrap > dl{   
+   width: 100%;
+   margin-bottom: 4%;
+   
+}
+
+#comyear_wrap > dl:last-child{
+    margin-bottom: 0;
+}
+
+#comyear_wrap > dl > dt {
+    font-size: 17px;    
+    font-weight: bold;    
+    color: #fa6868;
+    width: 100%;
+    line-height: 17px;
+     transition: all 0.4s ease-in;
+    transform: translateY(-100px);
+    opacity: 0;
+}
+
+#comyear_wrap.st_eft > dl > dt {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+#comyear_wrap > dl > dd{
+    border-top: 3px solid #cecece;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 1% 30%;
+    color: #313131;
+    padding-top: 0.5%;
+    transition: all 0.4s ease-in;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+#comyear_wrap.st_eft > dl > dd{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+    #sub_bar_wrap > ul li a {
+        font-size: 1.13em;
+    }
+
+
+}
+
+/* 모바일 미디어 쿼리 */
+
+@media screen and (max-width: 768px) {
+        
+    #sub_bar_wrap > ul li a {
+        font-size: 1.2em;
+    }
+
+    #sub_bar_wrap > ul li {
+        width: 33.1%;
+        border-left: 1px solid #fff;
+    }
+
+    #sub_bar_wrap > ul li:nth-child(4),
+    #sub_bar_wrap > ul li:last-child {
+        border-top: 1px solid #fff;
+    }
+
+    #sub_bar_wrap > ul li:first-child,
+    #sub_bar_wrap > ul li:nth-child(4) {
+        border-left: 0;
+    }
+
+    #sub_bar_wrap > ul li a {
+        padding: 8% 0;
+    }
+
+    #sub_bar_wrap > ul li:nth-child(4) a,
+    #sub_bar_wrap > ul li:last-child a {
+        padding: 5.2% 0;
+    }
+    
+    #comyear_wrap {
+        margin: 10% auto 11%;
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 650px) {
+    
+    #comyear_wrap > dl > dt {
+        font-size: 16px;
+    }
+    
+    #comyear_wrap > dl > dd {
+        font-size: 13px;
+    }
+    
+     
+    #comyear_wrap {
+        margin: 12% auto 14%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    #sub_bar_wrap > ul li a {
+        font-size: 1.15em;
+    }
+    
+    #comyear_wrap > dl {
+        margin-bottom: 6%;
+    }
+    
+      #comyear_wrap > dl > dt {
+        font-size: 15px;
+    }
+    
+    #comyear_wrap > dl > dd {
+        font-size: 14px;
+    }
+
+}
+

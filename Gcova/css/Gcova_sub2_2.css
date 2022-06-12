@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* 서브메뉴 활성화 */
+
+#sub_bar_wrap > ul li:last-child {
+    background: #fa6868;
+}
+
+#sub_bar_wrap > ul li:last-child a {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* 서브메뉴 수정 */
+
+
+
+#sub_bar_wrap > ul li:first-child a, #sub_bar_wrap > ul li:nth-child(2) a {
+    padding-top: 4%;
+}
+
+#sub_bar_wrap > ul li a{
+   padding: 4% 0;
+}
+
+
+
+/* 본문 */
+
+#pagetwo_allwrap {   
+    margin: 0 auto 15%;
+}
+
+
+#pagetwo_wrap  {
+    min-height: 400px;
+   
+}
+
+#pagetwo_allwrap .hx.h2{
+    background: #fff;
+    font-size: 14px;
+}

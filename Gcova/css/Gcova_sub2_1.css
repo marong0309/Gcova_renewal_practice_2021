@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+/* 서브메뉴 활성화 */
+
+#sub_bar_wrap > ul li:first-child {
+    background: #fa6868;
+}
+
+#sub_bar_wrap > ul li:first-child a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* 서브메뉴 수정 */
+
+
+
+#sub_bar_wrap > ul li:first-child a, #sub_bar_wrap > ul li:nth-child(2) a {
+    padding-top: 4%;
+}
+
+#sub_bar_wrap > ul li a{
+   padding: 4% 0;
+}
+
+
+
+
+
+/* 본메뉴 시작 */
+
+#bgtwo{
+   margin: 0 auto 12%;
+    width: 100%;
+}
+
+#slide{
+    width: 100%;
+}
+
+#bgtwo .swiper-container {
+    width: 100%;     
+    position: relative;
+}
+
+#bgtwo .swiper-container .swiper-slide {
+    text-align: center;
+}
+
+#bgtwo .swiper-container .swiper-slide img {
+    width: 100%;
+    height: auto;
+
+}
+
+#bgtwo .ps_btn {
+    position: absolute;
+    z-index: 10;
+    bottom: 9%;
+    right: 10%;
+    display: flex;
+    text-indent: -9999px;
+}
+
+#bgtwo .ms_stop {
+    margin: 0 3px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+#bgtwo .ms_stop.on {
+    background: url(../img/main/play_pause.png) -50px 0 no-repeat;
+}
+
+#bgtwo .ms_stop {
+    background: url(../img/main/play_pause.png) 0 0 no-repeat;
+}
+
+/*
+        .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+            opacity: 1;
+            color: #fff;
+            background: #777;
+            border-radius: 0;
+        }*/
+
+#bgtwo .swiper-container .swiper-button-next,
+#bgtwo .swiper-container .swiper-button-prev {
+    background-size: auto;
+
+}
+
+#bgtwo .swiper-container .swiper-button-prev {
+    background-image: url(../img/main/pre_button.png);
+    margin-left: 3%;
+}
+
+#bgtwo .swiper-container .swiper-button-next {
+    background-image: url(../img/main/next_button.png);
+    margin-right: 3%;
+}
+
+#bgtwo .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background-color: #fa6868;
+}
+
+
+#bgtwo .swiper-container-horizontal > .swiper-pagination-progressbar,
+.swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    height: 8px;
+    top: auto;
+    /* 0값 해제는 auto */
+    bottom: 0;
+}
+
+#bgtwo .swiper-container-horizontal > .swiper-pagination-progressbar {
+    background-color: #e5e5e5;
+}
+
+#bgtwo .swiper-container-vertical > .swiper-pagination-progressbar {
+    background: #fa6868;
+}
+
+
+/* 반응형 웹 시작 */
+
+@media screen and (max-width:560px){
+    #bgtwo .swiper-container .swiper-button-next,
+    #bgtwo .swiper-container .swiper-button-prev {
+        transform: scale(0.6);
+    }
+}
+
+#bgtwo .swiper-container .swiper-button-prev {
+    background-image: url(../img/main/pre_button.png);
+    margin-left: 1%;
+}
+
+#bgtwo .swiper-container .swiper-button-next {
+    background-image: url(../img/main/next_button.png);
+    margin-right: 1%;
+}
+
+
+#bgtwo .ps_btn {   
+    right: 5%;
+    transform: scale(0.8);
+}
+
+
+#bgtwo .swiper-container-horizontal > .swiper-pagination-progressbar,
+.swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    height: 6px;
+   
+}
+
+#sub_bar_wrap > ul li:first-child a, #sub_bar_wrap > ul li:nth-child(2) a {
+    padding-top: 4%;
+  
+}
+
+
+
+
+
+@media screen and (max-width:430px) {
+     #bgtwo .swiper-container .swiper-button-next,
+    #bgtwo .swiper-container .swiper-button-prev {
+        transform: scale(0.4);
+    }
+    
+    
+#bgtwo .swiper-container .swiper-button-prev {
+    background-image: url(../img/main/pre_button.png);
+    margin-left: 0.5%;
+}
+
+#bgtwo .swiper-container .swiper-button-next {
+    background-image: url(../img/main/next_button.png);
+    margin-right: 0.5%;
+}
+    
+#bgtwo .ps_btn {   
+    right: 5%;
+    transform: scale(0.6);
+}
+    
+    #bgtwo .swiper-container-horizontal > .swiper-pagination-progressbar,
+.swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    height: 5px;
+   
+}
+    #sub_bar_wrap > ul li:first-child a, #sub_bar_wrap > ul li:nth-child(2) a {
+    padding-top: 4%;
+    font-size: 13px;
+}
+
+
+
+}
+
+
+

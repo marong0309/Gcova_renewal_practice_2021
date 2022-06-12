@@ -1,0 +1,171 @@
+<!Doctype html>
+<html>
+
+<head lang="ko">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>&#58;&#58;지코바소개&#58;&#58;</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Gcova_common.css">
+    <link rel="stylesheet" href="css/Gcova_sub_common.css">
+    <link rel="stylesheet" href="css/Gcova_sub1_3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="img/main/Gcova_favicon.png" rel="shortcut icon">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/Gcova_mb_common.js"></script>
+
+</head>
+
+
+<body>
+<!-- header ============= -->
+  <? include "header.html" ?>
+    <!-- header 끝 ============= -->
+
+   <section id="top_ads_bg">
+        <div id="topads_wrap" class="row_c">
+            <a href="Gcova_sub4_1.html">
+                <div id="ads_img_wrap">
+                    <figure>
+                        <img src="img/sub01/sub01_05/ads_bar.jpg" alt="지코바광고">
+                    </figure>
+                    <figure>
+                        <img src="img/sub01/sub01_01/ads_Gcova2.jpg" alt="지코바광고">
+                    </figure>
+                </div>
+            </a>
+        </div>
+    </section>
+
+  <section id="gcova_sub_bar_bg">
+        <div id="subbar_allwrap">
+            <div id="sub_bar_wrap" class="row">
+                <h2 id="subbar_title">지코바소개</h2>
+                <ul>
+                    <li>
+                        <a href="Gcova_sub1_1.html#gcova_sub_bar_bg">
+                            인사말
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Gcova_sub1_2.html#gcova_sub_bar_bg">
+                            회사연혁
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Gcova_sub1_3.html#gcova_sub_bar_bg">
+                            주요시설
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Gcova_sub1_4.html#gcova_sub_bar_bg">
+                            찾아오시는 길
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Gcova_sub1_5.html#gcova_sub_bar_bg">
+                            About 지코바
+                        </a>
+                    </li>
+                </ul>
+                
+                 <section>
+        <div id="main_plc_wrap">
+            <div id="main_plc_mainimg">
+               
+                <figure>
+                    <img src="img/sub01/sub01_03/companybg02.jpg" alt="지코바 회사 전경">
+                </figure>
+                
+            </div>
+            <h4>지코바의 주요시설을 소개합니다.</h4>
+            <!--main_plc_mainimg-->
+            <div id="slide">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/sub01/sub01_03/companybg01.jpg" alt="회사전경">
+                        <p>회사 전경</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/sub01/sub01_03/automachine_img.jpg" alt="양념포장 자동설비">
+                        <p>양념포장 자동설비</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/sub01/sub01_03/coolingmachine.jpg" alt="냉각 및 숙성실">
+                        <p>냉각 및 숙성실</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/sub01/sub01_03/hot_img.jpg" alt="가열실">
+                        <p>가열실</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/sub01/sub01_03/orgsave_img.jpg" alt="원재료 저장실">
+                        <p>원재료 저장실</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/sub01/sub01_03/ref_img.jpg" alt="계육보관 냉동고">
+                        <p>계육보관 냉동고</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/sub01/sub01_03/save_img.jpg" alt="저온 저장실">
+                        <p>저온 저장실</p>
+                        </div>
+                        <div class="swiper-slide"><img src="img/sub01/sub01_03/warehouse_img.jpg" alt="물류창고">
+                        <p>물류창고</p>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!--slide-->
+        </div>
+        <!--main_plc_wrap-->
+    </section>
+    <!--main_plc_allwrap-->
+
+            </div>
+            <!--sub_bar_wrap-->
+
+        </div>
+        <!--subbar_allwrap-->
+    </section>
+    <!--gcova_sub_bar_bg-->
+   
+  <? include "footer.html" ?>      
+    
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true, //블릿버튼 제어
+            },
+            navigation: { //이전다음버튼 제어
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        
+            effect:'coverflow',
+            grabCursor : true,
+            centeredSlide :true,
+            coverflowEffect:{
+                rotate:60,
+                stretch:20,
+                depth:100,
+                modifier:1,
+                slideshadow: true, 
+            }
+        });
+
+    </script>
+</body>
+
+</html>

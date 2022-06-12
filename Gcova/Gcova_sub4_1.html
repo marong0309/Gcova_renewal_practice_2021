@@ -1,0 +1,326 @@
+<!Doctype html>
+<html>
+
+<head lang="ko">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>&#58;&#58;가맹점&#58;&#58;</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Gcova_common.css">
+    <link rel="stylesheet" href="css/Gcova_sub_common.css">
+    <link rel="stylesheet" href="css/Gcova_sub4_1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="img/main/Gcova_favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/Gcova_mb_common.js"></script>
+
+    <script>
+        $(function() { //JQuery 시작 
+            var i = 0;
+            $('#prcss_smwrap02 > div').eq(i).show();
+            $('#prcss_smwrap01 > div').eq(i).addClass('on');
+            $('#prcss_smwrap01 > div').click(function() {
+                i = $(this).index();
+                $('#prcss_smwrap02 > div').hide();
+                $('#prcss_smwrap02 > div').eq(i).show();
+                $('#prcss_smwrap01 > div').removeClass('on');
+                $('#prcss_smwrap01 > div').eq(i).addClass('on');
+
+            });
+            
+            
+            var k = 0;
+            
+            $('#dt_prcss_imgwrap > ul > li').mouseover(function() {
+                k = $(this).index();
+                
+                
+                
+                $('#dt_prcss_imgwrap > ul > li>.kk_box.up').eq(k).show();
+                $('#dt_prcss_imgwrap > ul > li>.kk_box').removeClass('up');
+                $('#dt_prcss_imgwrap > ul > li>.kk_box').eq(k).addClass('up');
+            });
+            
+            $('#dt_prcss_imgwrap > ul > li').mouseout(function() {
+                 $('#dt_prcss_imgwrap > ul > li>.kk_box').removeClass('up');
+            });
+            
+            return false;
+
+
+
+
+
+        }); //JQuery 끝
+
+    </script>
+
+</head>
+
+
+<body>
+    <!-- header ============= -->
+    <? include "header.html" ?>
+    <!-- header 끝 ============= -->
+
+    <section id="top_ads_bg">
+        <div id="topads_wrap" class="row_c">
+            <a href="Gcova_sub4_1.html">
+                <div id="ads_img_wrap">
+                    <figure>
+                        <img src="img/sub01/sub01_05/ads_bar.jpg" alt="지코바광고">
+                    </figure>
+                    <figure>
+                        <img src="img/sub01/sub01_01/ads_Gcova2.jpg" alt="지코바광고">
+                    </figure>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="gcova_sub_bar_bg">
+        <div id="subbar_allwrap">
+            <div id="sub_bar_wrap" class="row">
+                <h2 id="subbar_title">가맹점</h2>
+                <ul>
+                    <li>
+                        <a href="Gcova_sub4_1.html#subbar_title">
+                            가맹점 개설
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Gcova_sub4_2.html#subbar_title">
+                            가맹점 정보
+                        </a>
+                    </li>
+                </ul>
+
+                <h4 class="txttxt">개설절차</h4>
+
+                <div id="prcss_allwrap">
+
+                    <div id="prcss_wrap">
+                        <div id="prcss_extra_wrap">
+                            <div id="prcss_smwrap01">
+                                <div class="prcss_main_txt">
+                                    <span>01 가맹상담</span>
+                                </div>
+                                <div class="prcss_main_txt">
+                                    <span>02 입지조사 점포선정</span>
+                                </div>
+                                <div class="prcss_main_txt">
+                                    <span>03 가맹계약 점포계약</span>
+                                </div>
+                                <div class="prcss_main_txt">
+                                    <span>04 점포실축 도면제작</span>
+                                </div>
+                                <div class="prcss_main_txt">
+                                    <span>05 인테리어공사 허가 및 신고교육</span>
+                                </div>
+                                <div class="prcss_main_txt">
+                                    <span>06 집기투입</span>
+                                </div>
+                                <div class="prcss_main_txt">
+                                    <span>07 개점</span>
+                                </div>
+                                <div class="prcss_main_txt">
+                                    <span>08 사후관리</span>
+                                </div>
+                            </div>
+                            <!--prcss_smwrap01-->
+                            <div id="prcss_ano_wrap">
+                                <div id="prcss_smwrap02">
+                                    <div>
+                                        <h6>01 가맹상담</h6>
+                                        <ul>
+                                            <li>사업타당성 협의</li>
+                                            <li>가맹정보 제공</li>
+                                        </ul>
+                                        <!--prcss_main_txt01-->
+                                    </div>
+                                    <div>
+                                        <h6>02 입지조사 점포선정</h6>
+                                        <ul>
+                                            <li>상권분석</li>
+                                            <li>점포구조검토</li>
+                                        </ul>
+                                        <!--prcss_main_txt01-->
+                                    </div>
+                                    <div>
+                                        <h6>03 가맹계약 점포계약</h6>
+                                        <ul>
+                                            <li>가맹계약체결</li>
+                                            <li>점포계약</li>
+                                            <li>가맹금예치</li>
+                                        </ul>
+                                        <!--prcss_main_txt01-->
+                                    </div>
+                                    <div>
+                                        <h6>04 점포실축 도면제작</h6>
+                                        <ul>
+                                            <li>장애물처리</li>
+                                            <li>주방기기배치확정</li>
+                                            <li>공사일정 협의</li>
+                                        </ul>
+                                        <!--prcss_main_txt01-->
+                                    </div>
+                                    <div>
+                                        <h6>05 인테리어공사 허가 및 신고 교육</h6>
+                                        <ul>
+                                            <li>영입허가</li>
+                                            <li>사업자등록</li>
+                                            <li>조리 및 운영교육</li>
+                                            <li>사은품선정</li>
+                                            <li>중도금 납입</li>
+                                        </ul>
+                                        <!--prcss_main_txt01-->
+                                    </div>
+                                    <div>
+                                        <h6>06 집기투입</h6>
+                                        <ul>
+                                            <li>각종집기류 투입</li>
+                                            <li>개점준비</li>
+                                            <li>홍보작업</li>
+                                            <li>초도물량 입고</li>
+                                            <li>잔금납입</li>
+                                        </ul>
+                                        <!--prcss_main_txt01-->
+                                    </div>
+                                    <div>
+                                        <h6>07 개점</h6>
+                                        <ul>
+                                            <li>시식회</li>
+                                            <li>오픈행사</li>
+                                            <li>현지교육실시</li>
+                                        </ul>
+                                        <!--prcss_main_txt01-->
+                                    </div>
+                                    <div>
+                                        <h6>08 사후관리</h6>
+                                        <ul>
+                                            <li>경영지도</li>
+                                            <li>조리교육점검</li>
+                                            <li>홍보지도</li>
+                                        </ul>
+                                        <!--prcss_main_txt01-->
+                                    </div>
+                                </div>
+                                <!--prcss_smwrap02-->
+                            </div>
+                            <!--prcss_ano_wrap-->
+                        </div>
+                        <!--prcss_extra_wrap-->
+                    </div>
+                    <!--prcss_wrap-->
+                </div>
+                <!--prcss_allwrap-->
+
+
+                <div id="dt_prcss_allwrap">
+                    <h4>개설 상세내역</h4>
+                    <div id="dt_prcss_imgwrap">
+                        <ul>
+                            <li>
+                                <img src="img/sub04/sub04_1/inter2.jpg" alt="인테리어">
+                                <div class="kk_box">
+                                    <h6>인테리어</h6>
+                                    <p>
+                                        목공사&#44; 도장공사&#44; 타일공사&#44; 전기 및 조명공사&#44; 실내상하수공사&#44; 가구공사&#44; &#40;카운터테이블&#44; 실사걸이&#44; 싱크장&#41;
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/sub04/sub04_1/doc.jpg" alt="닥터공사">
+                                <div class="kk_box">
+                                    <h6>닥터설비</h6>
+                                    <p>
+                                        후드공사&#44; 외부닥트공사&#44; FAN설치공사&#44; &#40;닥트 설치위치 점주와 사전협의&#41;
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/sub04/sub04_1/cover.jpg" alt="간판">
+                                <div class="kk_box">
+                                    <h6>간 판</h6>
+                                    <p>
+                                        LED간판&#44; 전면썬팅&#44; 메뉴판
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/sub04/sub04_1/kit.jpg" alt="주방집기 및 용품">
+                                <div class="kk_box">
+                                    <h6>주방집기 및 비품</h6>
+                                    <p>
+                                        전기오븐기&#44; 냉장고&#44; 가스대&#44; 싱크대&#44; 작업대&#44; 전기온수기&#44; &#44;테이블&#44; 의자&#44; 가위&#44; 접시 외 24개 품목&#44; &#40;볶음기 제외&#41;
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/sub04/sub04_1/edu.jpg" alt="교육">
+                                <div class="kk_box">
+                                    <h6>교 육</h6>
+                                    <p>
+                                        개업전 &#58; 지정장소에서 조리방법 연수<br>
+                                        개업시 &#58; 판촉지도요원 현지지도
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/sub04/sub04_1/open%20event.jpg" alt="개업행사">
+                                <div class="kk_box">
+                                    <h6>개업행사</h6>
+                                    <p>
+                                        개업전단지&#44; 자석전단지&#44; 이벤트도우미
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/sub04/sub04_1/ready.jpg" alt="점주 준비사항">
+                                <div class="kk_box">
+                                    <h6>점주 준비사항</h6>
+                                    <p>
+                                        오토바이&#44; 냉난방기&#44;
+                                        TV&#44; 전기증설&#44; 전화개설&#44; 가스배관설치&#44; 정화조공사&#44; 외부상하수도공사&#44; 점포내부 장애물철거&#44; 전면윈도우 개조&#44; 인허가 및 신고&#44; 사은품 선정&#44; 전단지 배포 및 홍보&#44; 개업인력 확보
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/sub04/sub04_1/cost.jpg" alt="개설비용">
+                                <div class="kk_box">
+                                    <h6>개설비용</h6>
+                                    <p>
+                                        개설비&#40;10평기준&#41; &#58; 전화문의<br>
+                                        계약이행보조금 &#58; 전화문의&#40;계약종료시 바환&#41;<br>
+                                        10평 초과시는 초과 1평당 추가 &#58; 전화문의
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!--dt_prcss_imgwrap-->
+
+                </div>
+                <!--dt_prcss_allwrap-->
+
+
+            </div>
+            <!--sub_bar_wrap-->
+
+        </div>
+        <!--subbar_allwrap-->
+    </section>
+    <!--gcova_sub_bar_bg-->
+
+
+    <? include "footer.html" ?>
+
+
+
+
+</body>
+
+</html>

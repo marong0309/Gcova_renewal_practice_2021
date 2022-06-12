@@ -1,0 +1,148 @@
+<!Doctype html>
+<html>
+
+<head lang="ko">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>&#58;&#58;이벤트&#58;&#58;</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Gcova_common.css">
+    <link rel="stylesheet" href="css/Gcova_sub_common.css">
+    <link rel="stylesheet" href="css/Gcova_sub2_1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="img/main/Gcova_favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/Gcova_mb_common.js"></script>
+
+</head>
+
+
+<body>
+    <!-- header ============= -->
+    <? include "header.html" ?>
+    <!-- header 끝 ============= -->
+
+   <section id="top_ads_bg">
+        <div id="topads_wrap" class="row_c">
+            <a href="Gcova_sub4_1.html">
+                <div id="ads_img_wrap">
+                    <figure>
+                        <img src="img/sub01/sub01_05/ads_bar.jpg" alt="지코바광고">
+                    </figure>
+                    <figure>
+                        <img src="img/sub01/sub01_01/ads_Gcova2.jpg" alt="지코바광고">
+                    </figure>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="gcova_sub_bar_bg">
+        <div id="subbar_allwrap">
+            <div id="sub_bar_wrap" class="row">
+                <h2 id="subbar_title">이벤트</h2>
+                <ul>
+                    <li>
+                        <a href="Gcova_sub2_1.html#subbar_title">
+                            진행중인 이벤트
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://wnsrb0216.cafe24.com/xe/event">
+                            지난 이벤트
+                        </a>
+                    </li>
+                </ul>
+
+                <section id="bgtwo">
+                    <div id="slide">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/main/eventpage01_edit1.jpg" alt="지코바스틱이벤트"></div>
+                                <div class="swiper-slide"><img src="img/main/eventpage01_edit2.jpg" alt="언제나바른선택"></div>
+                                <div class="swiper-slide"><img src="img/main/eventpage01_edit3.jpg" alt="지코바 치킨"></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+
+                            <!--재생, 정지버튼-->
+                            <div class="ps_btn">
+                                <div class="swiper-button-play ms_stop">stop</div>
+                            </div>
+                            <!--ps_btn-->
+
+                        </div>
+                        <!--swiper-container-->
+                    </div>
+                    <!--slide-->
+                </section>
+
+            </div>
+            <!--sub_bar_wrap-->
+
+        </div>
+        <!--subbar_allwrap-->
+    </section>
+    <!--gcova_sub_bar_bg-->
+
+
+
+
+    <? include "footer.html" ?>
+
+
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1, //보여지는 슬라이드 개수
+            spaceBetween: 20, //슬라이드 사이 공간
+            loop: true, // 반복 슬라이드
+            keyboard: {
+                enabled: true, //키보드 제어
+            },
+            autoplay: {
+                delay: 3500, // 4초마다 슬라이드
+                disableOnInteraction: true, //버튼 제어시 멈춤
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar',
+
+                renderBullet: function(index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + '</span>'
+                }
+            },
+            navigation: { //이전다음버튼 제어
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        $(function() {
+
+            $('.ms_stop').click(function() {
+                $(this).toggleClass('on');
+                if ($(this).hasClass('on')) {
+                    swiper.autoplay.stop();
+                } else {
+                    swiper.autoplay.start();
+                }
+
+            });
+
+
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

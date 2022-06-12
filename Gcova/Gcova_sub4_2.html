@@ -1,0 +1,121 @@
+<!Doctype html>
+<html>
+
+<head lang="ko">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>&#58;&#58;가맹점&#58;&#58;</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Gcova_common.css">
+    <link rel="stylesheet" href="css/Gcova_sub_common.css">
+    <link rel="stylesheet" href="css/Gcova_sub4_2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="img/main/Gcova_favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/Gcova_mb_common.js"></script>
+
+</head>
+
+
+<body>
+    <!-- header ============= -->
+    <? include "header.html" ?>
+    <!-- header 끝 ============= -->
+
+    <section id="top_ads_bg">
+        <div id="topads_wrap" class="row_c">
+            <a href="Gcova_sub4_1.html">
+                <div id="ads_img_wrap">
+                    <figure>
+                        <img src="img/sub01/sub01_05/ads_bar.jpg" alt="지코바광고">
+                    </figure>
+                    <figure>
+                        <img src="img/sub01/sub01_01/ads_Gcova2.jpg" alt="지코바광고">
+                    </figure>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="gcova_sub_bar_bg">
+        <div id="subbar_allwrap">
+            <div id="sub_bar_wrap" class="row">
+                <h2 id="subbar_title">가맹점</h2>
+                <ul>
+                    <li>
+                        <a href="Gcova_sub4_1.html#subbar_title">
+                            가맹점 개설
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Gcova_sub4_2.html#subbar_title">
+                            가맹점 정보
+                        </a>
+                    </li>
+                </ul>
+
+
+                <div id="kmap_allwrap">
+
+                    <div id="map" style="width:100%;height:350px;"></div>
+
+                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	65276c273bb326ca83fd27b85be7a49b"></script>
+                    <script>
+                        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                            mapOption = {
+                                center: new kakao.maps.LatLng(37.461999666083734, 126.67976279194092), // 지도의 중심좌표
+                                level: 3 // 지도의 확대 레벨
+                            };
+
+                        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+                        // 마커가 표시될 위치입니다 
+                        var markerPosition = new kakao.maps.LatLng(37.461999666083734, 126.67976279194092);
+
+                        // 마커를 생성합니다
+                        var marker = new kakao.maps.Marker({
+                            position: markerPosition
+                        });
+
+                        // 마커가 지도 위에 표시되도록 설정합니다
+                        marker.setMap(map);
+
+                        var iwContent = '<div style="padding:7px;font-size:15px;margin-bottom:1%;">지코바 주안1호점 <br><a href="https://map.kakao.com/link/map/지코바 주안1호,37.461999666083734, 126.67976279194092" style="color:green;font-size:12px;" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/지코바 주안1호점,37.461999666083734, 126.67976279194092" style="color:red;font-size:12px;" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+                            iwPosition = new kakao.maps.LatLng(37.461999666083734, 126.67976279194092); //인포윈도우 표시 위치입니다
+
+                        // 인포윈도우를 생성합니다
+                        var infowindow = new kakao.maps.InfoWindow({
+                            position: iwPosition,
+                            content: iwContent
+                        });
+
+                        // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+                        infowindow.open(map, marker);
+
+                    </script>
+
+
+                </div>
+                <!--kmap_allwrap-->
+
+
+            </div>
+            <!--sub_bar_wrap-->
+
+        </div>
+        <!--subbar_allwrap-->
+    </section>
+    <!--gcova_sub_bar_bg-->
+
+
+
+
+
+
+    <? include "footer.html" ?>
+
+</body>
+
+</html>
